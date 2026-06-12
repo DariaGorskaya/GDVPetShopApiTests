@@ -19,7 +19,7 @@ class TestPet:
 
     @allure.title("Попытка обновить несуществующего питомца")
     def test_update_nonexistent_pet(self):
-        with allure.step("Подготовка данных для обновления несуществующего питомца"):
+        with allure.step("Отправка запроса на удаление несуществующего питомца"):
             payload = {
                 "id": 9999,
                 "name": "Non-existent Pet",
